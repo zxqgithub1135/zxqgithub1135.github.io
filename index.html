@@ -152,6 +152,85 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Java内存划分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/29/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/">Java内存划分</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/29/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/" class="archive-article-date">
+  	<time datetime="2020-04-29T06:22:13.803Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Java内存划分"><a href="#Java内存划分" class="headerlink" title="Java内存划分"></a>Java内存划分</h1><h3 id="1-栈（Stack）"><a href="#1-栈（Stack）" class="headerlink" title="1.栈（Stack）"></a>1.栈（Stack）</h3><p>存放方法中的局部变量，方法的运行一定要在栈当中运行</p>
+<p>局部变量：方法的参数，或者是方法{}内部的变量。</p>
+<p>作用域：一旦超出作用域，立刻从栈内存当中消失。</p>
+<h3 id="2-堆（Heap）"><a href="#2-堆（Heap）" class="headerlink" title="2.堆（Heap）"></a>2.堆（Heap）</h3><p>凡是new出来的东西，都在堆当中。</p>
+<p>堆内存里面的东西都有一个地址值：16进制。</p>
+<p>堆内存里面的数据，都有默认值。</p>
+<p>规则：</p>
+<ul>
+<li>如果是整数              默认为0</li>
+<li>如果是浮点数          默认为0.0</li>
+<li>如果是字符              默认为’\u0000’</li>
+<li>如果是布尔              默认为false</li>
+<li>如果是引用类型       默认为null</li>
+</ul>
+<h3 id="3-方法区（Method-Area）"><a href="#3-方法区（Method-Area）" class="headerlink" title="3.方法区（Method Area）"></a>3.方法区（Method Area）</h3><p>存储.class相关信息，包含方法的信息。</p>
+<h3 id="4-本地方法栈-Native-Method-Stack"><a href="#4-本地方法栈-Native-Method-Stack" class="headerlink" title="4. 本地方法栈(Native Method Stack)"></a>4. 本地方法栈(Native Method Stack)</h3><p>与操作系统相关。</p>
+<h3 id="5-寄存器（PC-Register）"><a href="#5-寄存器（PC-Register）" class="headerlink" title="5. 寄存器（PC Register）"></a>5. 寄存器（PC Register）</h3><p>与CPU相关</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/29/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-哈哈哈" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
