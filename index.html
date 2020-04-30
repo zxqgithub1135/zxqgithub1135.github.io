@@ -159,13 +159,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/29/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/">Java内存划分</a>
+      <a class="article-title" href="/2020/04/30/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/">Java内存划分</a>
     </h1>
   
 
         
-        <a href="/2020/04/29/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/" class="archive-article-date">
-  	<time datetime="2020-04-29T06:22:13.803Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
+        <a href="/2020/04/30/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/" class="archive-article-date">
+  	<time datetime="2020-04-30T03:36:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-30</time>
 </a>
         
       </header>
@@ -189,6 +189,7 @@
 <h3 id="3-方法区（Method-Area）"><a href="#3-方法区（Method-Area）" class="headerlink" title="3.方法区（Method Area）"></a>3.方法区（Method Area）</h3><p>存储.class相关信息，包含方法的信息。</p>
 <h3 id="4-本地方法栈-Native-Method-Stack"><a href="#4-本地方法栈-Native-Method-Stack" class="headerlink" title="4. 本地方法栈(Native Method Stack)"></a>4. 本地方法栈(Native Method Stack)</h3><p>与操作系统相关。</p>
 <h3 id="5-寄存器（PC-Register）"><a href="#5-寄存器（PC-Register）" class="headerlink" title="5. 寄存器（PC Register）"></a>5. 寄存器（PC Register）</h3><p>与CPU相关</p>
+<h3 id="数组内存划分"><a href="#数组内存划分" class="headerlink" title="数组内存划分"></a>数组内存划分</h3><p><img src="/2020/04/30/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/shuzu.png" alt></p>
 
       
 
@@ -201,7 +202,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/29/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/04/30/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/">展开全文 >></a>
         </p>
       
 
@@ -231,29 +232,28 @@
 
 
   
-    <article id="post-哈哈哈" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-程序算法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/27/%E5%93%88%E5%93%88%E5%93%88/">哈哈哈</a>
+      <a class="article-title" href="/2020/04/29/%E7%A8%8B%E5%BA%8F%E7%AE%97%E6%B3%95/">程序算法</a>
     </h1>
   
 
         
-        <a href="/2020/04/27/%E5%93%88%E5%93%88%E5%93%88/" class="archive-article-date">
-  	<time datetime="2020-04-27T07:44:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-27</time>
+        <a href="/2020/04/29/%E7%A8%8B%E5%BA%8F%E7%AE%97%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2020-04-29T15:36:57.633Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="哈哈哈哈哈哈哈哈哈哈哈哈"><a href="#哈哈哈哈哈哈哈哈哈哈哈哈" class="headerlink" title="哈哈哈哈哈哈哈哈哈哈哈哈"></a>哈哈哈哈哈哈哈哈哈哈哈哈</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>qlwejqwlkejwq</p>
-<hr>
-<p>sb</p>
+        <h1 id="程序算法"><a href="#程序算法" class="headerlink" title="程序算法"></a>程序算法</h1><h3 id="1-斐波拉切数列"><a href="#1-斐波拉切数列" class="headerlink" title="1. 斐波拉切数列"></a>1. 斐波拉切数列</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">rabbit</span>(<span class="params">month</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(month&lt;<span class="number">4</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> rabbit(month<span class="number">-3</span>) + rabbit(month - <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line">alert(rabbit(<span class="number">10</span>));</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -266,7 +266,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/27/%E5%93%88%E5%93%88%E5%93%88/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/04/29/%E7%A8%8B%E5%BA%8F%E7%AE%97%E6%B3%95/">展开全文 >></a>
         </p>
       
 
