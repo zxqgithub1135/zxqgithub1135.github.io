@@ -152,6 +152,95 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-接口小结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/17/%E6%8E%A5%E5%8F%A3%E5%B0%8F%E7%BB%93/">接口小结</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/17/%E6%8E%A5%E5%8F%A3%E5%B0%8F%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2020-05-17T14:19:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="接口小结"><a href="#接口小结" class="headerlink" title="接口小结"></a>接口小结</h2><h3 id="Java-9-版本中的接口"><a href="#Java-9-版本中的接口" class="headerlink" title="Java  9+版本中的接口"></a>Java  9+版本中的接口</h3><ol>
+<li><p>成员变量其实是常量，格式:</p>
+<p>[public] [static] [final] 数据类型 常量名称 = 数据值；</p>
+<p>注意：</p>
+<p>​        常量必须进行赋值，而且一旦赋值不能改变。</p>
+<p>​        常量名称完全大写，用下划线进行分隔。（推荐）</p>
+</li>
+<li><p>接口中最重要的就是抽象方法，格式：</p>
+<p>[public] [abstract] 返回值类型 方法名称(参数列表);</p>
+<p>注意：</p>
+<p>​        实现类必须覆盖重写接口所以的抽象方法，除非实现类是抽象类。</p>
+<ol start="3">
+<li>从Java 8开始，接口里允许定义静态方法，格式：</li>
+</ol>
+<p>[public] static 返回值类型 方法名称(参数列表){方法体}</p>
+<p>注意：</p>
+<p>​        应该通过接口名称进行调用，不能通过实现类对象调用接口的静态方法。</p>
+</li>
+</ol>
+<ol start="4">
+<li><p>从Java 9开始，接口里允许定义私有方法，格式：</p>
+<p>普通私有方法：private 返回值类型 方法名称(参数列表){方法体}</p>
+<p>静态私有方法：private static 返回值类型 方法名称(参数列表){方法体}</p>
+<p>注意：</p>
+<p>​        private的方法只有接口自己才能调用，不能被实现的类使用。</p>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/17/%E6%8E%A5%E5%8F%A3%E5%B0%8F%E7%BB%93/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Java内存划分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -190,6 +279,7 @@
 <h3 id="4-本地方法栈-Native-Method-Stack"><a href="#4-本地方法栈-Native-Method-Stack" class="headerlink" title="4. 本地方法栈(Native Method Stack)"></a>4. 本地方法栈(Native Method Stack)</h3><p>与操作系统相关。</p>
 <h3 id="5-寄存器（PC-Register）"><a href="#5-寄存器（PC-Register）" class="headerlink" title="5. 寄存器（PC Register）"></a>5. 寄存器（PC Register）</h3><p>与CPU相关</p>
 <h3 id="数组内存划分"><a href="#数组内存划分" class="headerlink" title="数组内存划分"></a>数组内存划分</h3><p><img src="/2020/04/30/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/shuzu.png" alt></p>
+<h3 id="类在内存中发生的事情"><a href="#类在内存中发生的事情" class="headerlink" title="类在内存中发生的事情"></a>类在内存中发生的事情</h3><p><img src="/2020/04/30/Java%E5%86%85%E5%AD%98%E5%88%92%E5%88%86/lei.png" alt="alt lei"></p>
 
       
 
